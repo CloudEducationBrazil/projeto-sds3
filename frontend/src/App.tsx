@@ -6,6 +6,7 @@ import NavBar from 'assets/components/NavBar';
 import Footer from 'assets/components/Footer';
 import DataTable from 'assets/components/DataTable';
 import BarChart from 'assets/components/BarChart';
+import DonutChart from 'assets/components/DonutChart';
 
 function App() {
   return (
