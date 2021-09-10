@@ -23,6 +23,7 @@ public class Sale {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Integer visited;
+	private Integer deals;
 	private Double amount;
 	private LocalDate date;
 	
@@ -32,10 +33,11 @@ public class Sale {
 	
 	public Sale() {
 	}
-	
-	public Sale(Long id, Integer visited, Double amount, LocalDate date, Seller seller) {
+
+	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
 		this.id = id;
 		this.visited = visited;
+		this.deals = deals;
 		this.amount = amount;
 		this.date = date;
 		this.seller = seller;
@@ -55,6 +57,14 @@ public class Sale {
 
 	public void setVisited(Integer visited) {
 		this.visited = visited;
+	}
+
+	public Integer getDeals() {
+		return deals;
+	}
+
+	public void setDeals(Integer deals) {
+		this.deals = deals;
 	}
 
 	public Double getAmount() {
@@ -77,13 +87,7 @@ public class Sale {
 		return seller;
 	}
 
-	public void setSeller(Seller seller) {
-		this.seller = seller;
-	}
-
-	@Override
-	public String toString() {
-		return "Sale [id=" + id + ", visited=" + visited + ", amount=" + amount + ", date=" + date + ", seller="
-				+ seller + "]";
-	}
+//	public void setSeller(Seller seller) {
+//		this.seller = seller;
+//	}
 }
