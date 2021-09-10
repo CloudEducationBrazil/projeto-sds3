@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 //Annotation da JPA
 @Entity
-@Table(name = "tb_sallers")
+@Table(name = "tb_sellers")
 public class Seller {
 	
 	@Id

@@ -2,6 +2,7 @@ package com.devsuperior.dsvendas.entities;
 
 import java.time.LocalDate;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,12 +27,12 @@ public class Sale {
 	private LocalDate date;
 	
 	@ManyToOne
-	@JoinColumn(name = "seler_id")	
+	@JoinColumn(name = "seller_id")	
 	private Seller seller; 	// Composição de objetos
 	
 	public Sale() {
 	}
-
+	
 	public Sale(Long id, Integer visited, Double amount, LocalDate date, Seller seller) {
 		this.id = id;
 		this.visited = visited;
