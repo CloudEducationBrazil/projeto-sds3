@@ -1,5 +1,4 @@
-export type Success = {
-  sellerName: string;
-  visited: number;
-  deals: number;
+export type Seller = {
+  id: number;
+  name: string;
 };
