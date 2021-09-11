@@ -14,7 +14,7 @@ const Dashboard = () => {
         <div className="row px-3">
           <div className="col-sm-6">
             <h5 text-center text-secondary>
-              Taxa de Sucesso (%)
+              Taxa de Sucesso ( %)
             </h5>
             <BarChart />
           </div>
